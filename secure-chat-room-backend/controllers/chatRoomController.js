@@ -49,6 +49,7 @@ const createChatRoom = async (req, res) => {
 
               const newChatRoom = rows[0];
               res.status(201).json(newChatRoom);
+              
             });
           });
       });

@@ -10,7 +10,7 @@ const activeTokens = [];
 const register = async (req, res) => {
   try {
     const { userId, deviceId, name, phone, availCoins, password } = req.body;
-
+    console.log(req.body);
     db.query('SELECT * FROM users WHERE userId = ?', [userId], async (err, results) => {
       if (err) {
         console.error('Error checking existing user:', err);
@@ -45,7 +45,7 @@ const register = async (req, res) => {
 const login = async (req, res) => {
   try {
     const { userId, password } = req.body;
-
+    console.log(userId,password) 
     db.query('SELECT * FROM users WHERE userId = ?', [userId], async (err, results) => {
       if (err) {
         console.error('Error finding user:', err);

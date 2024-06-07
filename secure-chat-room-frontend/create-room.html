@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room</title>
+    <link rel="stylesheet" href="styles/create-room.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span id="home-link">Home</span>
+        </nav>
+    </header>
+    <main>
+        <section class="create-room-section">
+            <h2>Create Chat Room</h2>
+            <form id="create-room-form">
+                <input type="text" id="room-id" placeholder="Room ID" required>
+                <input type="text" id="prime-member" placeholder="Prime Member" required>
+                <textarea id="participants" placeholder="Participants (comma-separated)" required></textarea>
+                <input type="number" id="max-capacity" placeholder="Max Capacity" required>
+                <button type="submit">Create Room</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Secure Chat Room</p>
+    </footer>
+    <script src="scripts/create-room.js"></script>
+</body>
+</html>

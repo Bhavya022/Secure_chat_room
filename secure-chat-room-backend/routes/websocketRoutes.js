@@ -7,5 +7,4 @@ wss.on('connection', (ws, req) => {
     handleWebSocketConnection(ws, req);
 });
 
-// Export the WebSocket server
 module.exports = wss;

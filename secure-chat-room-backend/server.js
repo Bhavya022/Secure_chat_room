@@ -7,7 +7,6 @@ const db = require('./config/db');
 const cookieParser = require('cookie-parser');
 const authMiddleware = require('./middleware/authMiddleware')
 dotenv.config();
-
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } }); 
