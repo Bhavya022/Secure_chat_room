@@ -12,7 +12,7 @@ Frontend
 Backend Endpoints
 Folder Structure
 ## Screenshots
-C:\Users\Dell\Pictures\Screenshots\Screenshot (237).png
+![Login Page](./Screenshot (237).png) 
 Contributing
 Features
 User Registration and Login
