@@ -1,8 +1,7 @@
 # Secure_chat_room
-Secure Chat Room
 A secure chat room application that allows users to register, create chat rooms, join chat rooms, and send friend requests. This project is built using Node.js for the backend and vanilla JavaScript, HTML, and CSS for the frontend.
 
-Table of Contents
+## Table of Contents
 Features
 Getting Started
 Prerequisites
@@ -12,10 +11,9 @@ Usage
 Frontend
 Backend Endpoints
 Folder Structure
-Screenshots
+## Screenshots
 C:\Users\Dell\Pictures\Screenshots\Screenshot (237).png
 Contributing
-License
 Features
 User Registration and Login
 Create Chat Rooms
@@ -23,7 +21,7 @@ Join Chat Rooms
 Send Friend Requests
 View and Manage Chat Rooms
 Getting Started
-Prerequisites
+## Prerequisites
 Node.js and npm installed on your machine.
 MySQL database server set up.
 Installation
@@ -35,7 +33,7 @@ git clone https://github.com/your-username/secure-chat-room.git
 cd secure-chat-room
 Install Dependencies
 
-For the backend:
+## For the backend:
 
 bash
 Copy code
@@ -47,7 +45,7 @@ bash
 Copy code
 cd ../secure-chat-room-frontend
 npm install
-Set Up the Database
+## Set Up the Database
 
 Import the provided SQL script (database.sql) to create the necessary tables.
 Update the database configuration in config/db.js with your MySQL credentials.
@@ -76,7 +74,7 @@ Serve the Frontend
 You can use any local server tool to serve the frontend files, or just open index.html in your browser.
 
 Usage
-Frontend
+## Frontend
 Open index.html in your browser to start the application.
 
 Main Pages
