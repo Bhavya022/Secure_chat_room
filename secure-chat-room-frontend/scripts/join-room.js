@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/JoinRoom/join', {
+            const response = await fetch('https://secure-chat-room-backend.onrender.com/api/JoinRoom/join', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

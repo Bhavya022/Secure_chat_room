@@ -11,8 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for the "Send Friend Request" button
     document.getElementById('send-friend-request-button').addEventListener('click', () => {
-        window.location.href = 'send-friend-request.html'; // Redirect to the send friend request page
+        window.location.href = 'send-friend-request.html'; 
     });
 
-    // Add event listeners for other buttons as needed
 });

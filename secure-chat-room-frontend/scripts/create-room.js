@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Send create room request to the server
-            const response = await fetch('http://localhost:5000/api/chatrooms/create', {
+            const response = await fetch('https://secure-chat-room-backend.onrender.com/api/chatrooms/create', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

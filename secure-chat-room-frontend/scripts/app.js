@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
     const registerForm = document.getElementById('register-form');
 
-    // Event listener for login form submission
+    
     loginForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('login-password').value;
       console.log(userId,password)
         try {
-            // Send login request to the server
-            const response = await fetch('http://localhost:5000/api/auth/login', {
+            
+            const response = await fetch('https://secure-chat-room-backend.onrender.com/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -31,28 +31,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Event listener for register form submission
     registerForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        const userId = document.getElementById('userId').value;
-        const deviceIdId = document.getElementById('deviceId').value;
+        const userId = document.getElementById('myUserId').value;
+        //console.log(userId)
+        const deviceId = document.getElementById('deviceId').value;
         const name = document.getElementById('name').value;
         const password = document.getElementById('password').value;
         const phone = document.getElementById('phone').value;
         const availCoins = document.getElementById('availCoins').value;
-
+           //console.log(userId,deviceId,name,password,phone,availCoins)
         try {
+            console.log(userId,deviceId,name,password,phone,availCoins)
             // Send register request to the server
-            const response = await fetch('http://localhost:5000/api/auth/register', {
+            const response = await fetch('https://secure-chat-room-backend.onrender.com/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, userId, password, phone, availCoins })
+                body: JSON.stringify({userId,deviceId,name,password,phone,availCoins})
             });
 
             const data = await response.json();
-            console.log(data); // Handle response from the server accordingly
+            console.log(data); 
             if(data){
                 alert(data.message)
             } 
